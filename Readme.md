@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Рахим Абдраев](https://up.htmlacademy.ru/adaptive-individual/3/user/2290335).
-* Наставник: [Рахим Абдраев](https://up.htmlacademy.ru/adaptive-individual/3/user/2290335).
+* Наставник: [Рахим Абдраев](https://up.htmlacademy.ru/adaptive-individual/3/user/2290335)!.
 
 ---
 
