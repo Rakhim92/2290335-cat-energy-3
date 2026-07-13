@@ -33,6 +33,10 @@ $mobile-width-only: 767px;
 
   @media (min-width: $desktop-width) {
     background-image: url("/images/index-background-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/images/index-background-desktop@2x.png");
+    }
   }
 }
 
@@ -52,15 +56,18 @@ $mobile-width-only: 767px;
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("/images/catalog-upsells-tablet@2x.png");
+    background-image: url("/images/catalog-upsells-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/images/catalog-upsells-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("/images/catalog-upsells-desktop@2x.png");
+    background-image: url("/images/catalog-upsells-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/images/catalog-upsells-desktop@2x.png");
+    }
   }
 }
-
-// @media (min-width: $tablet-width) {
-
-
-// }
