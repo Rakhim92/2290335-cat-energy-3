@@ -17,14 +17,14 @@ $mobile-width-only: 767px;
 }
 
 .promo {
-  background-image: url("/images/index-background-mobil@1x.png");
+  background-image: url("/images/index/index-background-mobil@1x.png");
   background-color: var(--green_primary);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/images/index-background-mobil@2x.png");
+    background-image: url("/images/index/index-background-mobil@2x.png");
   }
 
   @media (min-width: $tablet-width) {
@@ -32,10 +32,10 @@ $mobile-width-only: 767px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("/images/index-background-desktop@1x.png");
+    background-image: url("/images/index/index-background-desktop@1x.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/images/index-background-desktop@2x.png");
+      background-image: url("/images/index/index-background-desktop@2x.png");
     }
   }
 }
@@ -71,3 +71,4 @@ $mobile-width-only: 767px;
     }
   }
 }
+
