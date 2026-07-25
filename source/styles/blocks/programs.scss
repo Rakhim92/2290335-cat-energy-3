@@ -1,0 +1,20 @@
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.programs__name {
+  margin: 0;
+  font-family: $alter-font;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.programs__description {
+  margin: 0;
+  color: $special_dark_grey;
+  font-size: 14px;
+  line-height: 18px;
+}

@@ -1,0 +1,25 @@
+.story__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark_grey;
+}
+
+.story__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.story__fact {
+  font-family: $alter-font;
+  font-style: 24px;
+  line-height: 24px;
+}
+
+.story__total {
+  font-family: $alter-font;
+  font-style: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

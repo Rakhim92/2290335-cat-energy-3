@@ -9,10 +9,18 @@ body {
   font-family: $alter-font;
   width: 280px;
   height: 40px;
+  text-transform: uppercase;
   background-color: $green_primary;
   color: $white;
   cursor: pointer;
   border: none;
+}
+
+.title {
+  margin: 0;
+  font-family: $alter-font;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 .page__body {
