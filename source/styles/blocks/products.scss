@@ -1,0 +1,27 @@
+.products__title {
+  margin: 0;
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+}
+
+.products__offer,
+.products__suboffer {
+  margin: 0;
+  font-family: $alter-font;
+}
+
+.products__button {
+  background-color: $basic_grey;
+  color: $special_dark_grey;
+}
+

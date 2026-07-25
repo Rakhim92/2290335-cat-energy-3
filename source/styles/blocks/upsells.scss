@@ -1,0 +1,51 @@
+.upsells__title {
+  margin: 0;
+  font-family: $alter-font;
+}
+
+.upsells__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.upsells__item {
+  width: 280px;
+  height: 98px;
+}
+
+.upsells__name {
+  margin: 0;
+}
+
+.upsells::after {
+  content: "";
+  display: block;
+  width: 280px;
+  height: 290px;
+  background-image: url("/images/catalog-upsells-mobile@1x.png");
+  background-color: $green_primary-85;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/images/catalog-upsells-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("/images/catalog-upsells-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/images/catalog-upsells-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/images/catalog-upsells-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/images/catalog-upsells-desktop@2x.png");
+    }
+  }
+}

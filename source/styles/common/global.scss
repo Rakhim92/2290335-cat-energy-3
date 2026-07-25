@@ -1,1 +1,67 @@
+// common.scss
+body {
+  font-family: $primary-font;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.button {
+  font-family: $alter-font;
+  width: 280px;
+  height: 40px;
+  background-color: $green_primary;
+  color: $white;
+  cursor: pointer;
+  border: none;
+}
+
+.page__body {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.promo {
+  background-image: url("/images/index/index-background-mobil@1x.png");
+  background-color: $green_primary-85;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/images/index/index-background-mobil@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/images/index/index-background-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/images/index/index-background-desktop@2x.png");
+    }
+  }
+}
+
 /* здесь используйте глобальные селекторы img, body, html и так далее */
