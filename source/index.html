@@ -14,11 +14,15 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="/">
-      <img src="./images/logo-mobile.svg" alt="Логотип сайта" width="33" height="38">
+    <a class="page-header__logo" href="./index.html">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="/images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="/images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+        <img src="./images/logo-mobile.svg" alt="Логотип сайта" width="33" height="38">
+      </picture>
     </a>
-    <a class="page-header__name" href="/">
-      <img src="./images/logo2-mobile.svg" alt="Кэт Энерджи" width="101" height="18">
+    <a class="page-header__name" href="./index.html">
+      <img src="./images/logo-text.svg" alt="Кэт Энерджи" width="101" height="20">
     </a>
     <nav class="page-header__navigation">
       <button class="page-header__toggle" type="button">
@@ -45,7 +49,7 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="/images/index/tin-desktop@1x.png 1x, /images/index/tin-desktop@2x.png 2x" type="image/png" width="552" height="499">
         <source media="(min-width: 768px)" srcset="/images/index/tin-tablet@1x.png 1x, /images/index/tin-tablet@2x.png 2x" type="image/png" width="709" height="609">
-        <img src="/images/index-can-mobile@1x.png" srcset="/images/index-can-mobile@1x.png 1x, /images/index/tin-mobile@2x.png 2x" alt="Коктейль" width="280" height="270">
+        <img src="/images/index-can-mobile@1x.png" srcset="/images/index/tin-mobile@1x.png 1x, /images/index/tin-mobile@2x.png 2x" alt="Коктейль" width="280" height="270">
       </picture>
       <button class="button promo__button" type="submit">Подобрать программу</button>
     </section>
@@ -125,30 +129,30 @@
     </section>
   </main>
   <footer class="page-footer social">
-    <a class="page-footer__name" href="/">
-      <img src="./images/logo2-mobile.svg" alt="Кэт Энерджи" width="128" height="24">
+    <a class="page-footer__name" href="./index.html">
+      <img src="./images/logo-text.svg" alt="Кэт Энерджи" width="128" height="24">
     </a>
     <ul class="social__list">
       <li class="social__item">
-        <a class="social__link" href="#">
+        <a class="social__link social-vk" href="#">
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="#">
+        <a class="social__link social-utube" href="#">
           <span class="visually-hidden">Ютуб</span>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="#">
+        <a class="social__link social-telegram" href="#">
           <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
     </ul>
     <div class="page-footer__copyright copyright">
-      <b class="copyright__text">HTML Academy</b>
-      <a class="copyright__link" href="#">
-        <img src="./images/logo-developer.svg" alt="Логотип разработчика" width="27" height="34">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">HTML Academy</span>
+        <img class="copyright__logo" src="./images/developer-logo.svg" alt="Сайт разработчика HTML Академии" width="27" height="34">
       </a>
     </div>
   </footer>
