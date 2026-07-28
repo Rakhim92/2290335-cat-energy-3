@@ -14,11 +14,15 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="/">
-      <img src="./images/logo-mobile.svg" alt="Логотип сайта" width="33" height="38">
+    <a class="page-header__logo" href="./index.html">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="/images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="/images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+        <img src="./images/logo-mobile.svg" alt="Логотип сайта" width="33" height="38">
+      </picture>
     </a>
-    <a class="page-header__name" href="/">
-      <img src="./images/logo2-mobile.svg" alt="Кэт Энерджи" width="101" height="18">
+    <a class="page-header__name" href="./index.html">
+      <img src="./images/logo-text.svg" alt="Кэт Энерджи" width="101" height="20">
     </a>
     <nav class="page-header__navigation">
       <button class="page-header__toggle" type="button">
@@ -26,10 +30,10 @@
       </button>
       <ul class="page-header__list">
         <li class="page-header__item page-header__item--active">
-          <a class="page-header__link" href="./index.html">Главная</a>
+          <a class="page-header__link" href="/">Главная</a>
         </li>
         <li class="page-header__item">
-          <a class="page-header__link" href="/">Каталог продукции</a>
+          <a class="page-header__link" href="./catalog.html">Каталог продукции</a>
         </li>
         <li class="page-header__item">
           <a class="page-header__link" href="#">Подбор программы</a>
@@ -37,7 +41,6 @@
       </ul>
     </nav>
   </header>
-
   <main class="page-container">
     <h1 class="visually-hidden">Каталог кошачего корма и других продуктов для кошек</h1>
     <section class="products">
@@ -302,9 +305,9 @@
       </li>
     </ul>
     <div class="page-footer__copyright copyright">
-      <span class="copyright__text">HTML Academy</span>
-      <a class="copyright__link" href="#">
-        <img src="./images/developer-logo.svg" alt="Логотип разработчика" width="27" height="34">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">HTML Academy</span>
+        <img class="copyright__logo" src="./images/developer-logo.svg" alt="Сайт разработчика HTML Академии" width="27" height="34">
       </a>
     </div>
   </footer>

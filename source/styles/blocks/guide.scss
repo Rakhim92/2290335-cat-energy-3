@@ -5,4 +5,37 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark_grey;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.guide__description {
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.guide__description::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.guide__item:first-child .guide__description::before {
+  background-image: url("../../icons/leaf-icon.svg");
+}
+
+.guide__item:nth-child(2) .guide__description::before {
+  background-image: url("../../icons/mixture-icon.svg");
+}
+
+.guide__item:nth-child(3) .guide__description::before {
+  background-image: url("../../icons/fork-icon.svg");
+}
+
+.guide__item:last-child .guide__description::before {
+  background-image: url("../../icons/clock-icon.svg");
 }
