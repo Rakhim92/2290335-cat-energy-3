@@ -15,6 +15,15 @@
   width: 28px;
   height: 22px;
   background-color: $special_dark_grey;
+
+  &:is(:hover, :focus-visible, :focus) {
+    background-color: $green_primary;
+  }
+
+  &:active {
+    background-color: $green_primary;
+    opacity: 0.3;
+  }
 }
 
 .social-vk {
@@ -36,12 +45,24 @@
 .copyright__link {
   text-decoration: none;
   color: $special_dark_grey;
+}
+
+.copyright__text {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-.copyright__logo {
-  display: block;
-}
+  &::after {
+    @include pseudo-element(27px, 34px, $special_dark_grey);
+    mask-image: url("../../icons/stack.svg#developer-logo");
+  }
 
+  &:is(:hover, :focus-visible, :focus)::after {
+    background-color: $green_primary;
+  }
+
+  &:is(:active)::after {
+    background-color: $green_primary;
+    opacity: 0.3;
+  }
+}

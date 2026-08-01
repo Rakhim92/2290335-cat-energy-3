@@ -1,31 +1,32 @@
 .promo {
-  mask-image: url("../../icons/stack.svg#index-background");
+  background-image: url("../../images/index/index-background-desktop@1x.png");
   background-color: $green_primary-85;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: top center;
+  // background-size: cover;
+  background-blend-mode: luminosity;
 
-  // @media (min-resolution: 2dppx) {
-  //   background-image: url("/images/index/index-background-mobil@2x.png");
-  // }
+  @media (min-resolution: 2dppx) {
+    background-image: url("/images/index/index-background-mobil@2x.png");
+  }
 
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
 
-  // @media (min-width: $tablet-width) {
-  //   background-image: none;
-  // }
+  @media (min-width: $desktop-width) {
+    background-image: url("/images/index/index-background-desktop@1x.png");
 
-  // @media (min-width: $desktop-width) {
-  //   background-image: url("/images/index/index-background-desktop@1x.png");
-
-  //   @media (min-resolution: 2dppx) {
-  //     background-image: url("/images/index/index-background-desktop@2x.png");
-  //   }
-  // }
+    @media (min-resolution: 2dppx) {
+      background-image: url("/images/index/index-background-desktop@2x.png");
+    }
+  }
 }
 
 .promo__title {
   max-width: 249px;
   margin: 0 auto;
+  margin-bottom: 25px;
   text-align: center;
   font-family: $alter-font;
   color: $white;
@@ -34,7 +35,8 @@
 }
 
 .promo__subtitle {
-  margin: 0;
+  max-width: 198px;
+  margin: 0 auto;
   font-family: $alter-font;
   color: $white;
   font-size: 14px;

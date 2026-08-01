@@ -23,6 +23,16 @@ body {
   line-height: 40px;
 }
 
+.logo-text {
+  &:is(:hover, :focus-visible, :focus) {
+    fill: $concreate_text;
+  }
+
+  &:active {
+    fill: $concreate_active;
+  }
+}
+
 .page__body {
   width: 320px;
 
