@@ -7,3 +7,11 @@
     src: $font-src;
   }
 }
+
+@mixin pseudo-element($width, $height, $bg-color) {
+  content: "";
+  display: block;
+  width: $width;
+  height: $height;
+  background-color: $bg-color;
+}

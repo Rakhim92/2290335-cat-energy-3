@@ -18,8 +18,57 @@
 }
 
 .story__total {
+  margin: 0;
   font-family: $alter-font;
   font-style: 14px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.story__slider {
+  display: block;
+  width: 4px;
+  height: 512px;
+  background-color: $special_grey_2;
+  padding: 0;
+  border: none;
+  position: relative;
+
+  &:is(:hover, :focus-visible, :focus) {
+    background-color: $green_primary;
+  }
+
+  &:active {
+    opacity: 0.6;
+    background-color: $basic_green_2;
+  }
+
+  &::before {
+    @include pseudo-element(40, 40, $white);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(102, 102, 102, 1);
+    border-radius: 50%;
+  }
+
+  &::after {
+    @include pseudo-element(24, 18, $special_grey_2);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: url("../../icons/stack.svg#slider-controls");
+    cursor: pointer;
+  }
+}
+
+.story__slider:is(:hover, :focus-visible, :focus)::after {
+  background-color: $green_primary;
+}
+
+.story__slider:active::after {
+  opacity: 0.6;
+  background-color: $basic_green_2;
 }

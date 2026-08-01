@@ -1,10 +1,18 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 21px 14px 0;
 }
 
-.page-header__name img {
+.page-header__logo {
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.page-header__name {
+  padding-left: 56px;
+
   @media (min-width: $tablet-width) {
     height: 18px;
   }
@@ -14,18 +22,64 @@
   }
 }
 
+.page-header__navigation {
+  position: absolute;
+  display: none;
+  top: 65px;
+  background-color: $white;
+  width: 100%;
+}
+
+.page-header__navigation--show {
+  display: block;
+}
+
 .page-header__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  font-family: $alter-font;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header__item {
+  padding-top: 22px;
+  padding-bottom: 24px;
+  position: relative;
+  width: 100%;
+  padding-left: 74px;
+
+  &::before {
+    @include pseudo-element(100%, 1px, $border_line);
+    position: absolute;
+    top: 0;
+  }
 }
 
 .page-header__link {
   text-decoration: none;
-  font-family: $alter-font;
   color: $black;
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
+}
+
+.page-header__button {
+  background-image: url("../../icons/stack.svg/#burger-button-icon");
+  background-color: $white;
+  width: 24px;
+  height: 16px;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding-right: 12px;
+}
+
+.page-header__button--show {
+  background-image: url("../../icons/stack.svg#burger-button-icon-show");
+  width: 18px;
+  height: 18px;
+  background-color: $white;
 }

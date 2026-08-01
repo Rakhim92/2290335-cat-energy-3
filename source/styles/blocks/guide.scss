@@ -25,17 +25,17 @@
 }
 
 .guide__item:first-child .guide__description::before {
-  background-image: url("../../icons/leaf-icon.svg");
+  background-image: url("../../icons/stack.svg/#leaf-icon");
 }
 
 .guide__item:nth-child(2) .guide__description::before {
-  background-image: url("../../icons/mixture-icon.svg");
+  background-image: url("../../icons/stack.svg/#mixture-icon");
 }
 
 .guide__item:nth-child(3) .guide__description::before {
-  background-image: url("../../icons/fork-icon.svg");
+  background-image: url("../../icons/stack.svg/#fork-icon");
 }
 
 .guide__item:last-child .guide__description::before {
-  background-image: url("../../icons/clock-icon.svg");
+  background-image: url("../../icons/stack.svg/#clock-icon");
 }
