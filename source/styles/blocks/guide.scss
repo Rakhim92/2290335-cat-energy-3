@@ -13,6 +13,10 @@
     gap: 37px 153px;
     flex-flow: row wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 94px;
+  }
 }
 
 .guide__item {
