@@ -3,7 +3,6 @@
   background-color: $green_primary-85;
   background-repeat: no-repeat;
   background-position: top center;
-  // background-size: cover;
   background-blend-mode: luminosity;
 
   @media (min-resolution: 2dppx) {
@@ -11,7 +10,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-image: none;
+    background: none;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,6 +32,17 @@
   color: $white;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding-top: 65px;
+    padding-left: 90px;
+    min-width: 414px;
+    text-align: left;
+  }
 }
 
 .promo__subtitle {
@@ -41,4 +52,24 @@
   color: $white;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    min-width: 283px;
+    padding-top: 40px;
+    padding-left: 120px;
+    padding-bottom: 21px;
+  }
+}
+
+.promo__button {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    inset: 0;
+    top: 263px;
+    left: 88px;
+  }
 }

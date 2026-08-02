@@ -1,41 +1,57 @@
 .guide__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include resetTagUl;
+  color: $special_dark_grey;
   font-size: 14px;
   line-height: 18px;
-  color: $special_dark_grey;
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    gap: 37px 153px;
+    flex-flow: row wrap;
+  }
+}
+
+.guide__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    height: 280px;
+  }
 }
 
 .guide__description {
   margin: 0;
-  display: flex;
-  gap: 20px;
 }
 
-.guide__description::before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
+.guide__item::before {
+  @include pseudo-element(60px, 60px, $white);
   flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
-.guide__item:first-child .guide__description::before {
+.guide__item:first-child::before {
   background-image: url("../../icons/stack.svg/#leaf-icon");
 }
 
-.guide__item:nth-child(2) .guide__description::before {
+.guide__item:nth-child(2)::before {
   background-image: url("../../icons/stack.svg/#mixture-icon");
 }
 
-.guide__item:nth-child(3) .guide__description::before {
+.guide__item:nth-child(3)::before {
   background-image: url("../../icons/stack.svg/#fork-icon");
 }
 
-.guide__item:last-child .guide__description::before {
+.guide__item:last-child::before {
   background-image: url("../../icons/stack.svg/#clock-icon");
 }

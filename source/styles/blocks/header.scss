@@ -3,11 +3,22 @@
   align-items: center;
   justify-content: space-between;
   padding: 13px 21px 14px 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 704px;
+    min-height: 50px;
+    padding: 25px 34px 0 30px;
+  }
 }
 
 .page-header__logo {
   text-decoration: none;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .page-header__name {
@@ -15,6 +26,7 @@
 
   @media (min-width: $tablet-width) {
     height: 18px;
+    padding-left: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,16 +41,19 @@
   background-color: $white;
   width: 100%;
   z-index: 1;
-}
 
-.page-header__navigation--show {
-  display: block;
+  &--show {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: static;
+  }
 }
 
 .page-header__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include resetTagUl;
   font-family: $alter-font;
   font-size: 20px;
   line-height: 20px;
@@ -46,19 +61,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 94px;
+  }
 }
 
 .page-header__item {
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding: 22px 0 24px 74px;
   position: relative;
   width: 100%;
-  padding-left: 74px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: auto;
+  }
 
   &::before {
     @include pseudo-element(100%, 1px, $border_line);
     position: absolute;
     top: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -76,11 +109,16 @@
   border: none;
   margin: 0;
   padding-right: 12px;
+
+  &--show {
+    background-image: url("../../icons/stack.svg#burger-button-icon-show");
+    width: 18px;
+    height: 18px;
+    background-color: $white;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.page-header__button--show {
-  background-image: url("../../icons/stack.svg#burger-button-icon-show");
-  width: 18px;
-  height: 18px;
-  background-color: $white;
-}

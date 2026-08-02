@@ -21,6 +21,11 @@ body {
   font-family: $alter-font;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .logo-text {
@@ -35,9 +40,13 @@ body {
 
 .page__body {
   width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
