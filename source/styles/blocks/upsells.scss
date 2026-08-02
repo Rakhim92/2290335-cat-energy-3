@@ -1,17 +1,27 @@
 .upsells__title {
   margin: 0;
   font-family: $alter-font;
+  font-size: 27px;
+  line-height: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .upsells__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include resetTagUl;
 }
 
 .upsells__item {
   width: 280px;
   height: 98px;
+
+  &::after {
+    @include pseudo-element(100%, 2px, red);
+    margin-top: 19px;
+  }
 }
 
 .upsells__name {
