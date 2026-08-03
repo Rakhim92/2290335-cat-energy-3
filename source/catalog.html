@@ -219,56 +219,63 @@
             <button class="button card__button" type="button">Заказать</button>
           </div>
         </li>
+        <li class="products__item">
+          <p class="products__offer">Показать еще 100500 товаров</p>
+          <p class="products__suboffer">На самом деле вкусов гораздо больше!</p>
+          <button class="button products__button" type="button">Показать все</button>
+        </li>
       </ul>
-      <p class="products__offer">Показать еще 100500 товаров</p>
-      <p class="products__suboffer">На самом деле вкусов гораздо больше!</p>
-      <button class="button products__button" type="button">Показать все</button>
     </section>
 
     <section class="upsells">
       <h2 class="upsells__title">Дополнительные товары</h2>
-      <ul class="upsells__list">
-        <li class="upsells__item">
-          <h3 class="upsells__name">Сахарозаменитель</h3>
-          <div class="upsells__details">
-            <span>1 упаковка (100 г)</span>
-            <span>200 ₽</span>
-          </div>
-          <button class="button upsells__button" type="button">Заказать</button>
-        </li>
-        <li class="upsells__item">
-          <h3 class="upsells__name">Питьевая вода</h3>
-          <div class="upsells__details">
-            <span>5 литров</span>
-            <span>50 ₽</span>
-          </div>
-          <button class="button upsells__button" type="button">Заказать</button>
-        </li>
-        <li class="upsells__item">
-          <h3 class="upsells__name">Молоко</h3>
-          <div class="upsells__details">
-            <span>1 литр</span>
-            <span>100 ₽</span>
-          </div>
-          <button class="button upsells__button" type="button">Заказать</button>
-        </li>
-        <li class="upsells__item">
-          <h3 class="upsells__name">Витамины</h3>
-          <div class="upsells__details">
-            <span>1 упаковка (30 г)</span>
-            <span>300 ₽</span>
-          </div>
-          <button class="button upsells__button" type="button">Заказать</button>
-        </li>
-      </ul>
+      <div class="upsells__content">
+        <ul class="upsells__list">
+          <li class="upsells__item">
+            <h3 class="upsells__name">Сахарозаменитель</h3>
+            <div class="upsells__details">
+              <span>1 упаковка (100 г)</span>
+              <span>200 ₽</span>
+            </div>
+            <button class="button upsells__button" type="button">Заказать</button>
+          </li>
+          <li class="upsells__item">
+            <h3 class="upsells__name">Питьевая вода</h3>
+            <div class="upsells__details">
+              <span>5 литров</span>
+              <span>50 ₽</span>
+            </div>
+            <button class="button upsells__button" type="button">Заказать</button>
+          </li>
+          <li class="upsells__item">
+            <h3 class="upsells__name">Молоко</h3>
+            <div class="upsells__details">
+              <span>1 литр</span>
+              <span>100 ₽</span>
+            </div>
+            <button class="button upsells__button" type="button">Заказать</button>
+          </li>
+          <li class="upsells__item">
+            <h3 class="upsells__name">Витамины</h3>
+            <div class="upsells__details">
+              <span>1 упаковка (30 г)</span>
+              <span>300 ₽</span>
+            </div>
+            <button class="button upsells__button" type="button">Заказать</button>
+          </li>
+        </ul>
+        <div class="upsells__gift">
+          <p class="upsells__information">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
+      </div>
     </section>
 
     <section class="subscribe">
       <h2 class="subscribe__title">Акции и новинки</h2>
       <p class="subscribe__subtitle">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
         <label class="subscribe__control">
-          <input type="text" name="subscribe__email">
+          <input class="subscribe__input" type="text" name="subscribe__email">
         </label>
         <button class="button subscribe__button" type="submit">Подписаться</button>
       </form>
@@ -283,7 +290,7 @@
 
   <footer class="page-footer social">
     <a class="page-footer__name" href="./index.html">
-      <img src="./images/logo-text.svg" alt="Кэт Энерджи" width="128" height="24">
+      <img class="logo-text" src="./images/logo-text.svg" alt="Кэт Энерджи" width="128" height="24">
     </a>
     <ul class="social__list">
       <li class="social__item">
@@ -305,7 +312,6 @@
     <div class="page-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">HTML Academy</span>
-        <img class="copyright__logo" src="./images/developer-logo.svg" alt="Сайт разработчика HTML Академии" width="27" height="34">
       </a>
     </div>
   </footer>

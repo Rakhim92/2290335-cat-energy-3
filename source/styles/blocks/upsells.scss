@@ -3,6 +3,7 @@
   font-family: $alter-font;
   font-size: 27px;
   line-height: 27px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
@@ -10,34 +11,71 @@
   }
 }
 
+.upsells__content {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
 .upsells__list {
   @include resetTagUl;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    border: 2px solid $supreme_decorative;
+  }
 }
 
 .upsells__item {
-  width: 280px;
-  height: 98px;
-
-  &::after {
-    @include pseudo-element(100%, 2px, red);
-    margin-top: 19px;
+  &::before {
+    @include pseudo-element(100%, 2px, $supreme_decorative);
   }
+
+  &:last-child::after {
+    @include pseudo-element(100%, 2px, $supreme_decorative);
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    &:first-child::before {
+      display: none;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  // @media (min-width: $desktop-width) {
+
+  // }
 }
 
 .upsells__name {
   margin: 0;
 }
 
-.upsells::after {
-  content: "";
-  display: block;
-  width: 280px;
-  height: 290px;
-  background-image: url("/images/catalog-upsells-mobile@1x.png");
+.upsells__button {
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    height: 40px;
+  }
+}
+
+.upsells__gift {
+  min-height: 290px;
   background-color: $green_primary-85;
+  background-image: url("/images/catalog-upsells-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  position: relative;
+  margin-top: 35px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("/images/catalog-upsells-mobile@2x.png");
@@ -57,5 +95,27 @@
     @media (min-resolution: 2dppx) {
       background-image: url("/images/catalog-upsells-desktop@2x.png");
     }
+
+    width: 245px;
+    height: 288px;
+  }
+
+  &::after {
+    @include pseudo-element(78px, 80px, $green_primary);
+    background-image: url("../../icons/stack.svg#gift-icon");
+    position: relative;
+    top: 59px;
+    left: 101px;
   }
 }
+
+.upsells__information {
+  text-align: center;
+  width: 161px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  padding-top: 59px;
+}
+

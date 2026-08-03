@@ -1,23 +1,40 @@
-.subscribe {
-  min-width: 320px;
-  min-height: 336px;
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
 
-  // @media(min-width: $tablet-width) {
-
-  // }
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .subscribe__title {
   margin: 0;
   font-family: $alter-font;
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 32px;
 }
 
 .subscribe__subtitle {
   margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 24px;
 }
 
-.subscribe__control input {
+.subscribe__control {
+  display: block;
   width: 280px;
   height: 56px;
+}
+
+.subscribe__input {
+  width: inherit;
+  height: inherit;
   box-sizing: border-box;
+}
+
+.subscribe__button {
+  width: 280px;
+  height: 56px;
 }
