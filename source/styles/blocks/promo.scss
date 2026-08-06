@@ -1,38 +1,43 @@
 .promo {
-  background-image: url("../../images/index/index-background-desktop@1x.png");
+  background-image:
+    linear-gradient(to bottom, $green_primary-85 302px, $white 302px),
+    url("../../images/index/index-background-desktop@1x.png");
   background-color: $green_primary-85;
   background-repeat: no-repeat;
   background-position: top center;
-  background-blend-mode: luminosity;
+  background-size: contain;
+  height: 567px;
+  font-family: $alter-font;
+  color: $white;
+  outline: solid 1px $concreate_active;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("/images/index/index-background-mobil@2x.png");
-  }
+  // @media (min-resolution: 2dppx) {
+  //   background-image: url("/images/index/index-background-mobil@2x.png");
+  // }
 
-  @media (min-width: $tablet-width) {
-    background: none;
-    position: relative;
-  }
+  // @media (min-width: $tablet-width) {
+  //   background: none;
+  //   position: relative;
+  // }
 
-  @media (min-width: $desktop-width) {
-    background-image: url("/images/index/index-background-desktop@1x.png");
-    background-repeat: no-repeat;
+  // @media (min-width: $desktop-width) {
+  //   background-image: url("/images/index/index-background-desktop@1x.png");
+  //   background-repeat: no-repeat;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("/images/index/index-background-desktop@2x.png");
-    }
-  }
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: url("/images/index/index-background-desktop@2x.png");
+  //   }
+  // }
 }
 
 .promo__title {
   max-width: 249px;
   margin: 0 auto;
-  margin-bottom: 25px;
   text-align: center;
-  font-family: $alter-font;
-  color: $white;
   font-size: 36px;
   line-height: 36px;
+  padding-top: 27px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     color: $black;
@@ -49,8 +54,7 @@
 .promo__subtitle {
   max-width: 198px;
   margin: 0 auto;
-  font-family: $alter-font;
-  color: $white;
+  padding-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
 
@@ -67,10 +71,8 @@
 }
 
 .promo__button {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    inset: 0;
-    top: 263px;
-    left: 88px;
-  }
+  display: block;
+  margin: 0 auto;
+  // position: relative;
+  // top: auto;
 }
