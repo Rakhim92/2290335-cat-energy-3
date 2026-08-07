@@ -29,7 +29,11 @@
   grid-template-columns: auto 1fr;
 
   &::before {
-    @include pseudo-element(50px, 53px, $white);
+    @include pseudo-element(50px, 53px, $basic_grey);
+
+    // @media (max-width: $tablet-width) {
+    //   margin-bottom: 22px;
+    // }
 
     @media (min-width: $tablet-width) {
       grid-column: 2/-1;
@@ -61,6 +65,8 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
@@ -81,6 +87,8 @@
   grid-column: 1/-1;
 
   @media (max-width: $mobile-width-only) {
+    padding-top: 22px;
+
     &::after {
       @include pseudo-element(240px, 1px, $border_line_2);
       margin-top: 23px;
@@ -103,6 +111,10 @@
 .programs-slim::before {
   background-image: url("../../icons/stack.svg/#cat-back1-icon");
 
+  @media (max-width: $tablet-width) {
+    margin-right: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
@@ -113,6 +125,10 @@
   background-image: url("../../icons/stack.svg/#cat-back2-icon");
   width: 67px;
   height: 50px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 11px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 268px;
@@ -130,9 +146,10 @@
   display: inline-flex;
   align-items: center;
   padding-bottom: 20px;
+  grid-column: 1 / -1;
 
   &::after {
-    @include pseudo-element(32px, 10px, $white);
+    @include pseudo-element(32px, 10px, $basic_grey);
     background-image: url("../../icons/stack.svg/#arrow-right-icon");
     padding-left: 25px;
     transform-origin: left center;

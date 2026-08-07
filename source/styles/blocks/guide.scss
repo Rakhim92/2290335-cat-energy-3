@@ -1,3 +1,15 @@
+.guide {
+  height: 429px;
+  outline: solid 1px $concreate_active;
+}
+
+.guide__title {
+  padding-bottom: 40px;
+  // @media (max-width: $mobile-width-only) {
+  //   padding-bottom: 40px;
+  // }
+}
+
 .guide__list {
   @include resetTagUl;
   color: $special_dark_grey;
@@ -21,10 +33,10 @@
 
 .guide__item {
   display: flex;
-  flex-direction: column;
   gap: 20px;
 
   @media (min-width: $tablet-width) {
+    flex-direction: column;
     width: 230px;
     height: 280px;
   }
