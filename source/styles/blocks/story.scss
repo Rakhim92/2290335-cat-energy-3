@@ -2,10 +2,21 @@
   height: 659px;
   outline: solid 1px $concreate_active;
   background-color: $elementary_decorative;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 1081px;
+    background-image: linear-gradient(to bottom, $white 619px, $elementary_decorative 619px);
+  }
 }
 
 .story__title {
   padding-bottom: 40px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
 }
 
 .story__subtitle {
@@ -18,6 +29,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 55px;
   }
 }
 
@@ -75,6 +87,12 @@
   width: 280px;
   height: 256px;
   border: 1px solid #000000;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+  }
 }
 
 .slider__img {
