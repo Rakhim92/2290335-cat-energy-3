@@ -27,6 +27,8 @@
   grid-column: 2/-1;
   width: 140px;
   height: 103px;
+  font-size: 12px;
+  line-height: 16px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
@@ -46,6 +48,14 @@
 .card__name {
   margin: 0;
   font-family: $alter-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__image {
+  display: block;
+  padding-bottom: 17px;
 }
 
 .card__button {

@@ -69,12 +69,12 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: $mobile-width-only) {
-  .page-container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
+// @media (max-width: $mobile-width-only) {
+//   .page-container {
+//     padding-left: 20px;
+//     padding-right: 20px;
+//   }
+// }
 
 
 /* здесь используйте глобальные селекторы img, body, html и так далее */

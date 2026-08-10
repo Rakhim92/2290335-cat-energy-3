@@ -11,6 +11,10 @@ burgerBtn.addEventListener('click', () => {
   headerNavigationContent.classList.toggle('page-header__navigation--show');
 });
 
-range.addEventListener('input', () => {
-  slider.style.setProperty('--value', `${range.value }%`);
-});
+if (slider && range) {
+  range.addEventListener('input', () => {
+    slider.style.setProperty('--value', `${range.value }%`);
+  });
+}
+
+
