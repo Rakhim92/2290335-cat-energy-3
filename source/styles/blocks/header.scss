@@ -7,6 +7,11 @@
   @media (min-width: $tablet-width) {
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    background-image: linear-gradient(to right, $white 50%, $green_primary 50%);
+  }
 }
 
 .page-header__logo {
@@ -47,6 +52,12 @@
   @media (min-width: $tablet-width) {
     display: block;
     position: static;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: max-content;
+    margin-left: 543px;
+    background-color: $green_primary;
   }
 }
 
@@ -99,6 +110,10 @@
 .page-header__link {
   text-decoration: none;
   color: $black;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .page-header__button {

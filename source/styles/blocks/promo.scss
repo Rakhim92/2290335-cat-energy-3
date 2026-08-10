@@ -20,8 +20,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("/images/index/index-background-desktop@1x.png");
+    background-image:
+      linear-gradient(to right, $white 50%, $green_primary-85 50%),
+      url("../../images/index/index-background-desktop@1x.png");
     background-repeat: no-repeat;
+    margin-bottom: 82px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/images/index/index-background-desktop@2x.png");
@@ -80,3 +83,12 @@
     top: 295px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo__image {
+    position: relative;
+    top: 29px;
+    left: 557px;
+  }
+}
+

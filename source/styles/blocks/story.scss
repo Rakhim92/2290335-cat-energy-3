@@ -8,6 +8,15 @@
     height: 1081px;
     background-image: linear-gradient(to bottom, $white 619px, $elementary_decorative 619px);
   }
+
+  @media (min-width: $desktop-width) {
+    height: 512px;
+    background-image: linear-gradient(to bottom, $white 136px, $basic_grey 136px);
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .story__title {
@@ -30,6 +39,11 @@
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    height: 96px;
   }
 }
 
@@ -92,6 +106,13 @@
     width: 560px;
     height: 512px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    position: absolute;
+    right: 120px;
+    top: 0;
   }
 }
 

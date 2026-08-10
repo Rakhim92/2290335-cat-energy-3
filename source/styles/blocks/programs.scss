@@ -1,6 +1,11 @@
 .programs {
   height: 572px;
   outline: solid 1px $concreate_active;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .programs__list {
@@ -28,10 +33,6 @@
 
   &::before {
     @include pseudo-element(50px, 53px, $basic_grey);
-
-    // @media (max-width: $tablet-width) {
-    //   margin-bottom: 22px;
-    // }
 
     @media (min-width: $tablet-width) {
       grid-column: 2/-1;
@@ -105,6 +106,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
     grid-row: 2/-1;
+    padding: 39px 0 0 52px;
   }
 }
 
@@ -118,6 +120,12 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    margin: 41px 52px;
   }
 }
 
@@ -133,6 +141,12 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    margin: 47px 37px;
   }
 }
 
@@ -166,5 +180,9 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 0 55px 52px;
   }
 }
