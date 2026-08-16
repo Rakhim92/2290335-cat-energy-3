@@ -11,6 +11,7 @@
     height: 511px;
     box-sizing: border-box;
     padding: 10px 37px 40px;
+    background-image: linear-gradient(to bottom, $white 81px, $basic_grey 81px);
   }
 
   @media (min-width: $desktop-width) {
@@ -29,10 +30,13 @@
   height: 103px;
   font-size: 12px;
   line-height: 16px;
+  color: $special_dark_grey;
 
   @media (min-width: $tablet-width) {
     width: 250px;
     height: 157px;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: 22px;
     margin-bottom: 32px;
   }
@@ -50,7 +54,33 @@
   font-family: $alter-font;
   font-weight: 400;
   font-size: 16px;
+  color: $special_dark-grey-2;
   line-height: 20px;
+  width: 76px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 118px;
+    margin: 0 auto;
+  }
+}
+
+.card__text {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 5px;
+  }
+
+  &::after {
+    @include pseudo-element(100%, 1px, $supreme_decorative);
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .card__image {
