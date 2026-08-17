@@ -74,12 +74,12 @@
     justify-content: space-between;
     position: relative;
     margin-bottom: 5px;
-  }
 
-  &::after {
-    @include pseudo-element(100%, 1px, $supreme_decorative);
-    position: absolute;
-    bottom: 0;
+    &::after {
+      @include pseudo-element(100%, 1px, $supreme_decorative);
+      position: absolute;
+      bottom: 0;
+    }
   }
 }
 
