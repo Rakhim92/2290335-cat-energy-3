@@ -11,6 +11,11 @@
     padding: 50px 37px 40px;
   }
 
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    padding: 50px 37px 40px;
+  }
+
   &::before {
     @include pseudo-element(30px, 30px, $white);
     background-image: url("../../icons/stack.svg/#plus-icon");
@@ -69,5 +74,9 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }

@@ -4,11 +4,18 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 30px;
   }
 }
 
 .page-footer__name {
   padding: 40px 96px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 30px;
+  }
 }
 
 .social__list {
@@ -17,6 +24,10 @@
   display: flex;
   gap: 24px;
   padding: 20px 94px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .social__link {
@@ -49,6 +60,10 @@
 
 .page-footer__copyright {
   padding: 20px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright__link {
