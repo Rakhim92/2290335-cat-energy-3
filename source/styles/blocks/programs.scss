@@ -1,10 +1,12 @@
 .programs {
-  height: 572px;
-  outline: solid 1px $concreate_active;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding: 0 110px;
   }
 }
 
@@ -27,9 +29,27 @@
 
 .programs__item {
   background-color: $basic_grey;
-  padding-top: 24px;
+  box-sizing: border-box;
+  width: 280px;
+  padding: 20px 33px 18px 20px;
   display: grid;
   grid-template-columns: auto 1fr;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    width: 708px;
+    padding: 77px 63px 53px 52px;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 374px;
+    padding: 41px 61px 55px 52px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+  }
 
   &::before {
     @include pseudo-element(50px, 53px, $basic_grey);
@@ -44,24 +64,12 @@
       grid-row: 1/2;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: repeat(3, auto);
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 570px;
-    height: 374px;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
-  }
 }
 
 .programs__name {
   margin: 0;
   font-family: $alter-font;
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -69,6 +77,8 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
     grid-column: 1/2;
     grid-row: 1/2;
   }
@@ -97,16 +107,18 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
     grid-column: 1/2;
     grid-row: 2/3;
-    padding-top: 52px;
-    width: 340px;
+    padding-top: 24px;
+    padding-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
     grid-row: 2/-1;
-    padding: 39px 0 0 52px;
   }
 }
 
@@ -125,7 +137,6 @@
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 106px;
-    margin: 41px 52px;
   }
 }
 
@@ -146,7 +157,6 @@
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 100px;
-    margin: 47px 37px;
   }
 }
 
@@ -154,13 +164,19 @@
   text-decoration: none;
   text-transform: uppercase;
   font-family: $alter-font;
-  font-size: 20px;
-  line-height: 100%;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 4px 0;
   color: $black;
   display: inline-flex;
   align-items: center;
-  padding-bottom: 20px;
   grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    grid-column: 1/2;
+  }
 
   &::after {
     @include pseudo-element(32px, 10px, $basic_grey);
@@ -176,13 +192,5 @@
 
   &:active::after {
     opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1/2;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 23px 0 55px 52px;
   }
 }

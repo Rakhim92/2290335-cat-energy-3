@@ -22,12 +22,14 @@
     background-image:
       linear-gradient(to right, $white 50%, $green_primary-85 50%),
       url("../../images/index/index-background-desktop@1x.png");
-    // background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% 100%, 50% 100%;
+    background-position: 0 0, right top;
     margin-bottom: 82px;
 
-    // @media (min-resolution: 2dppx) {
-    //   background-image: url("/images/index/index-background-desktop@2x.png");
-    // }
+    @media (min-resolution: 2dppx) {
+      background-image: url("/images/index/index-background-desktop@2x.png");
+    }
   }
 }
 
