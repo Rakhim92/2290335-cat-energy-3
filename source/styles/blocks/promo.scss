@@ -8,7 +8,6 @@
   background-size: contain;
   font-family: $alter-font;
   color: $white;
-  outline: solid 1px $concreate_active;
 
   @media (min-resolution: 2dppx) {
     background-image: url("/images/index/index-background-mobil@2x.png");
@@ -23,12 +22,12 @@
     background-image:
       linear-gradient(to right, $white 50%, $green_primary-85 50%),
       url("../../images/index/index-background-desktop@1x.png");
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
     margin-bottom: 82px;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("/images/index/index-background-desktop@2x.png");
-    }
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("/images/index/index-background-desktop@2x.png");
+    // }
   }
 }
 
