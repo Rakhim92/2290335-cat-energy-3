@@ -1,7 +1,7 @@
 .contacts {
   width: 100%;
   height: auto;
-  background-color: $basic_grey;
+  background-color: $white;
 
   & iframe {
     border: none;
@@ -54,10 +54,14 @@
   font-size: 14px;
   line-height: 20px;
 
-  @media (min-width: $desktop-width) {
-    display: none;
+  @media (min-width: $tablet-width) {
+    max-width: 160px;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 

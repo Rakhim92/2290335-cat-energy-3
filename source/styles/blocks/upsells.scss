@@ -1,13 +1,24 @@
 .upsells__title {
   margin: 0;
   font-family: $alter-font;
-  font-size: 27px;
   font-weight: 400;
-  line-height: 27px;
+  font-size: 24px;
+  line-height: 24px;
   padding-top: 25px;
   padding-bottom: 36px;
-  padding-left: 20px;
+  margin-left: 20px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 
   &::after {
     @include pseudo-element(100%, 2px, $green_primary);
@@ -19,30 +30,32 @@
       left: 0;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    font-size: 32px;
-    line-height: 32px;
-    padding-left: 70px;
-  }
 }
 
 .upsells__text {
   position: relative;
   z-index: 2;
   background-color: $white;
-  padding-left: 40px;
   padding-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
 }
 
 .upsells__content {
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 80px;
     align-items: center;
+    padding: 0 110px;
   }
 }
 
@@ -155,7 +168,7 @@
     height: 40px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 244px;
   }
 }

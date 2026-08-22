@@ -6,12 +6,16 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 632px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    max-width: 632px;
     flex-direction: row;
     gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 752px;
   }
 }
 
@@ -47,8 +51,11 @@
   position: relative;
   z-index: 2;
   background-color: $white;
-  padding-left: 40px;
   padding-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
 }
 
 .subscribe__subtitle {
@@ -70,15 +77,23 @@
   display: block;
   width: 280px;
   height: 56px;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
 }
 
 .subscribe__input {
-  width: inherit;
-  height: inherit;
   box-sizing: border-box;
+  height: inherit;
+  width: inherit;
 }
 
 .subscribe__button {
-  width: 280px;
+  width: 256px;
   height: 56px;
 }

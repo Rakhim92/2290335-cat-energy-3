@@ -1,19 +1,18 @@
 .load-more-card {
   width: 320px;
   height: 207px;
-  box-sizing: border-box;
   padding: 25px 20px;
   font-family: $alter-font;
 
   @media (min-width: $tablet-width) {
     width: 324px;
     height: 429px;
+    box-sizing: border-box;
     padding: 50px 37px 40px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 245px;
-    padding: 50px 37px 40px;
   }
 
   &::before {

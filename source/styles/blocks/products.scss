@@ -1,10 +1,10 @@
 .products__title {
-  margin: 0 auto;
+  margin: 0;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  padding-top: 27px;
-  padding-bottom: 41px;
+  letter-spacing: -6%;
+  padding: 27px 0 41px 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
