@@ -1,7 +1,7 @@
 .load-more-card {
   width: 320px;
   height: 207px;
-  padding: 25px 20px;
+  padding: 25px 0;
   font-family: $alter-font;
 
   @media (min-width: $tablet-width) {
@@ -66,9 +66,6 @@
 }
 
 .load-more-card__button {
-  background-color: $basic_grey;
-  color: $special_dark_grey;
-  display: block;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {

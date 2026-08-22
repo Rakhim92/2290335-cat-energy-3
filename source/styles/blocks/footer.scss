@@ -46,6 +46,16 @@
   }
 }
 
+.logo-text {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .social-vk {
   mask-image: url("../../icons/social-vkontakte.svg");
 }
@@ -85,8 +95,7 @@
     background-color: $green_primary;
   }
 
-  &:is(:active)::after {
-    background-color: $green_primary;
+  &:active {
     opacity: 0.3;
   }
 }
