@@ -47,7 +47,7 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="./images/index/tin-desktop@1x.png 1x, ./images/index/tin-desktop@2x.png 2x" type="image/png" width="552" height="499">
         <source media="(min-width: 768px)" srcset="./images/index/tin-tablet@1x.png 1x, ./images/index/tin-tablet@2x.png 2x" type="image/png" width="709" height="609">
-        <img class="promo__image" src="./images/index/tin-mobile@1x.png" srcset="./images/index/tin-mobile@1x.png 1x, /images/index/tin-mobile@2x.png 2x" alt="Банка корма Кэт Энерджи" width="280" height="270">
+        <img class="promo__image" src="./images/index/tin-mobile@1x.png" srcset="./images/index/tin-mobile@1x.png 1x, ./images/index/tin-mobile@2x.png 2x" alt="Банка корма Кэт Энерджи" width="280" height="270">
       </picture>
       <button class="button button--green promo__button" type="button">Подобрать программу</button>
     </section>
@@ -87,26 +87,26 @@
       <h2 class="title story__title">Живой пример</h2>
       <p class="story__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <div class="story__fact">
-        <ul class="story__list">
-          <li class="story__item">
+        <dl class="story__list">
+          <div class="story__item">
             <dt class="story__number">5 кг</dt>
             <dd class="story__description">Снижение веса</dd>
-          </li>
-          <li class="story__item">
+          </div>
+          <div class="story__item">
             <dt class="story__number">60 дней</dt>
             <dd class="story__description">Затрачено времени</dd>
-          </li>
-        </ul>
+          </div>
+        </dl>
         <p class="story__total">Затраты на питание: 15 000 РУБ.</p>
       </div>
       <div class="slider">
         <picture>
-          <source media="(min-width: 768px)" srcset="/images/index/cat-before-tablet@1x.png 1x, /images/index/cat-before-tablet@2x.png 2x" type="image/png" width="560" height="512">
-          <img class="slider__img slider__img--before" src="/images/index/cat-before-mobile@1x.png" srcset="/images/index/cat-before-mobile@1x.png 1x, /images/index/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Котик до">
+          <source media="(min-width: 768px)" srcset="./images/index/cat-before-tablet@1x.png 1x, ./images/index/cat-before-tablet@2x.png 2x" type="image/png" width="560" height="512">
+          <img class="slider__img slider__img--before" src="./images/index/cat-before-mobile@1x.png" srcset="./images/index/cat-before-mobile@1x.png 1x, ./images/index/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис до начала программы (избыточный вес)">
         </picture>
         <picture>
-          <source media="(min-width: 768px)" srcset="/images/index/cat-after-tablet@1x.png 1x, /images/index/cat-after-tablet@2x.png 2x" type="image/png" width="560" height="512">
-          <img class="slider__img slider__img--after" src="/images/index/cat-after-mobile@1x.png" srcset="/images/index/cat-after-mobile@1x.png 1x, /images/index/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Котик после">
+          <source media="(min-width: 768px)" srcset="./images/index/cat-after-tablet@1x.png 1x, ./images/index/cat-after-tablet@2x.png 2x" type="image/png" width="560" height="512">
+          <img class="slider__img slider__img--after" src="./images/index/cat-after-mobile@1x.png" srcset="./images/index/cat-after-mobile@1x.png 1x, ./images/index/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис после программы (стройный и здоровый)">
         </picture>
         <label class="visually-hidden" for="slider-range">Показать картинку до или после</label>
         <input class="slider__range-js" type="range" min="0" max="100" value="50" step="1" id="slider-range" name="slider-range">
@@ -116,37 +116,40 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__information">
+      <div class="contacts__wrapper">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="contacts__subtitle">наб. Pеки Карповки, 5П, Санкт-Петербург</address>
+        <address class="contacts__address">
+          <span class="visually-hidden">Кэт Энерджи</span>
+          <p class="contacts__text">наб. Реки Карповки, 5П, Санкт-Петербург</p>
+        </address>
       </div>
-      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224469757035!2d30.314833976701472!3d59.96826865971425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1785831581933!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224469757035!2d30.314833976701472!3d59.96826865971425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1785831581933!5m2!1sru!2sru" width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Интерактивная карта с расположением офиса Кэт Энерджи"></iframe>
     </section>
   </main>
-  <footer class="page-footer social">
+  <footer class="page-footer">
     <a class="page-footer__name" href="./index.html">
       <img class="logo-text" src="./images/logo-text.svg" alt="Кэт Энерджи" width="128" height="24">
     </a>
     <ul class="social__list">
       <li class="social__item">
-        <a class="social__link social-vk" href="#">
+        <a class="social__link social__link--vk" href="#">
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link social-utube" href="#">
+        <a class="social__link social__link--youtube" href="#">
           <span class="visually-hidden">Ютуб</span>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link social-telegram" href="#">
+        <a class="social__link social__link--telegram" href="#">
           <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
     </ul>
     <div class="page-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="copyright__text">HTML Academy</span>
+        <span class="copyright__developer">HTML Academy</span>
       </a>
     </div>
   </footer>

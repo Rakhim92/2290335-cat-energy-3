@@ -10,7 +10,9 @@
   color: $white;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/images/index/index-background-mobil@2x.png");
+    background-image:
+      linear-gradient(to bottom, $green_primary-85 302px, $white 302px),
+      url("../../images/index/index-background-desktop@2x.png");
   }
 
   @media (min-width: $tablet-width) {
@@ -28,7 +30,9 @@
     margin-bottom: 82px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/images/index/index-background-desktop@2x.png");
+      background-image:
+        linear-gradient(to right, $white 50%, $green_primary-85 50%),
+        url("../../images/index/index-background-desktop@2x.png");
     }
   }
 }

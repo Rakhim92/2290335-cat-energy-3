@@ -127,10 +127,12 @@
   }
 }
 
-.upsells__details {
+.upsells__properties {
   font-size: 14px;
   line-height: 14px;
   padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
@@ -141,6 +143,16 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
   }
+}
+
+.upsells__property-wrapper {
+  display: inline;
+}
+
+.upsells__volume,
+.upsells__price {
+  display: inline;
+  margin: 0;
 }
 
 .upsells__button {

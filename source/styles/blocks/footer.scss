@@ -56,15 +56,15 @@
   }
 }
 
-.social-vk {
+.social__link--vk {
   mask-image: url("../../icons/social-vkontakte.svg");
 }
 
-.social-utube {
+.social__link--youtube {
   mask-image: url("../../icons/social-youtube.svg");
 }
 
-.social-telegram {
+.social__link--telegram {
   mask-image: url("../../icons/social-telegram.svg");
 }
 
@@ -81,7 +81,7 @@
   color: $special_dark_grey;
 }
 
-.copyright__text {
+.copyright__developer {
   display: flex;
   align-items: center;
   justify-content: space-between;
