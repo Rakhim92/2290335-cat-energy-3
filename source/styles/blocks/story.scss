@@ -21,6 +21,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 146px;
+  }
 }
 
 .story__text {
@@ -38,7 +42,7 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
-    height: 96px;
+    padding-bottom: 67px;
   }
 }
 
@@ -68,7 +72,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 55px;
+    padding-bottom: 51px;
   }
 }
 
@@ -120,6 +124,10 @@
     bottom: -5px;
     right: 14px;
   }
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic_grey;
+  }
 }
 
 .story__total {
@@ -141,6 +149,9 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    width: 100%;
+    display: flex;
+    gap: 65px;
   }
 }
 
@@ -164,8 +175,8 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     position: absolute;
-    right: 120px;
-    top: 0;
+    right: 111px;
+    top: 70px;
   }
 }
 

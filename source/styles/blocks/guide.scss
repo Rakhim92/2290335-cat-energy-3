@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 110px 69px;
+    padding: 69px 110px 0;
   }
 }
 
@@ -37,7 +37,7 @@
 
   //Проверить еще раз - там разные размеры везде
   @media (min-width: $desktop-width) {
-    gap: 94px;
+    gap: 73px;
   }
 }
 
@@ -60,6 +60,10 @@
     flex-direction: column;
     padding: 40px 0 57px;
   }
+
+  // @media (min-width: $desktop-width) {
+
+  // }
 
   &::before {
     @include pseudo-element(60px, 60px, $white);
