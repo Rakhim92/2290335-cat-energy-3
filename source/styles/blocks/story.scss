@@ -1,6 +1,6 @@
 .story {
   background-color: $elementary_decorative;
-  padding: 25px 20px 40px;
+  padding: 24px 20px 40px;
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to bottom, $white 619px, $elementary_decorative 619px);
@@ -59,7 +59,7 @@
   @include resetTagUl;
   display: flex;
   gap: 32px;
-  padding-bottom: 20px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
@@ -73,6 +73,7 @@
 .story__item {
   width: 124px;
   height: 56px;
+  box-sizing: border-box;
   border: solid 1px $supreme_decorative;
   border-radius: 3px;
   display: flex;
@@ -85,15 +86,19 @@
   font-family: $alter-font;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .story__description {
-  margin: 0;
   font-size: 12px;
   line-height: 12px;
+  text-transform: lowercase;
+  text-align: center;
+  padding: 0 3px;
   background-color: $elementary_decorative;
   position: absolute;
-  bottom: -6px;
+  bottom: -17px;
+  right: 31px;
 }
 
 .story__total {

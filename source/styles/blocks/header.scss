@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  padding: 13px 0;
+  padding: 13px 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -17,7 +17,8 @@
 
 .page-header__logo {
   text-decoration: none;
-  padding-left: 20px;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -139,7 +140,7 @@
   background-image: url("../../icons/stack.svg/#burger-button-icon");
   background-color: $white;
   width: 24px;
-  height: 16px;
+  height: 24px;
   cursor: pointer;
   border: none;
   margin: 0;

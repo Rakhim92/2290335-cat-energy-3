@@ -50,6 +50,7 @@
 }
 
 .contacts__address {
+  max-width: 140px;
   color: $special_dark_grey;
   font-size: 14px;
   line-height: 20px;
@@ -63,6 +64,10 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.contacts__text {
+  margin: 0;
 }
 
 .contacts__map {

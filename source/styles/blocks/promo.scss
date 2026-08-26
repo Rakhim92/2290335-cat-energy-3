@@ -1,18 +1,18 @@
 .promo {
   background-image:
-    linear-gradient(to bottom, $green_primary-85 302px, $white 302px),
-    url("../../images/index/index-background-desktop@1x.png");
+    linear-gradient(to bottom, $green_primary-85 372px, $white 302px),
+    url("../../images/index/index-background-mobil@1x.png");
   background-color: $green_primary-85;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: 0 28%;
   background-size: contain;
   font-family: $alter-font;
   color: $white;
 
   @media (min-resolution: 2dppx) {
     background-image:
-      linear-gradient(to bottom, $green_primary-85 302px, $white 302px),
-      url("../../images/index/index-background-desktop@2x.png");
+      linear-gradient(to bottom, $green_primary-85 372px, $white 302px),
+      url("../../images/index/index-background-mobil@2x.png");
   }
 
   @media (min-width: $tablet-width) {
@@ -41,9 +41,10 @@
   max-width: 249px;
   margin: 0 auto;
   text-align: center;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  padding-top: 27px;
+  padding-top: 24px;
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
@@ -66,6 +67,7 @@
   padding-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     color: $black;
@@ -81,6 +83,8 @@
 .promo__button {
   display: block;
   margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -89,8 +93,11 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .promo__image {
+.promo__image {
+  padding: 0 20px;
+  display: block;
+
+  @media (min-width: $desktop-width) {
     position: relative;
     top: 29px;
     left: 557px;

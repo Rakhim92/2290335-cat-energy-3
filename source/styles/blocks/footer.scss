@@ -23,7 +23,7 @@
   list-style-type: none;
   display: flex;
   gap: 24px;
-  padding: 20px 94px;
+  padding: 13px 94px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -69,7 +69,7 @@
 }
 
 .page-footer__copyright {
-  padding: 20px 20px 40px;
+  padding: 28px 20px 18px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -79,6 +79,8 @@
 .copyright__link {
   text-decoration: none;
   color: $special_dark_grey;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .copyright__developer {
