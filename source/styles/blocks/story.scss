@@ -45,8 +45,8 @@
 .story__fact {
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: center;
     padding-bottom: 99px;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,6 +63,8 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+    gap: 42px;
+    padding-right: 167px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,6 +82,11 @@
   align-items: center;
   justify-content: center;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+  }
 }
 
 .story__number {
@@ -87,6 +94,11 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .story__description {
@@ -99,6 +111,15 @@
   position: absolute;
   bottom: -17px;
   right: 31px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    font-size: 14px;
+    line-height: 14px;
+    min-width: 125px;
+    bottom: -5px;
+    right: 14px;
+  }
 }
 
 .story__total {
@@ -111,7 +132,11 @@
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
     font-size: 20px;
+    line-height: 27px;
+    padding-top: 8px;
   }
 
   @media (min-width: $desktop-width) {

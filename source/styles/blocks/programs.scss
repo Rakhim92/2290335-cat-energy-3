@@ -68,6 +68,10 @@
 
 .programs__item--pro {
   padding: 24px 33px 18px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 29px 53px 52px;
+  }
 }
 
 .programs__name {
@@ -149,8 +153,9 @@
   width: 67px;
   height: 50px;
 
-  @media (max-width: $tablet-width) {
-    margin-right: 5px;
+  @media (min-width: $tablet-width) {
+    margin-right: -3px;
+    margin-top: 14px;
   }
 
   @media (min-width: $tablet-width) {
@@ -189,7 +194,7 @@
   &::after {
     @include pseudo-element(32px, 10px, $basic_grey);
     background-image: url("../../icons/stack.svg/#arrow-right-icon");
-    padding-left: 25px;
+    padding-left: 52px;
     transform-origin: left center;
     transition: transform 0.3s linear;
   }

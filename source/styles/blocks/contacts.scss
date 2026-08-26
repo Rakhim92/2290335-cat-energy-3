@@ -24,7 +24,7 @@
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 66px 70px 62px;
     justify-content: space-between;
   }
 }
@@ -59,6 +59,7 @@
     max-width: 160px;
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {

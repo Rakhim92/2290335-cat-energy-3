@@ -54,7 +54,7 @@
     line-height: 60px;
     margin: 0;
     padding-top: 65px;
-    padding-left: 90px;
+    padding-left: 119px;
     padding-bottom: 40px;
     min-width: 414px;
     text-align: left;
@@ -87,15 +87,23 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    width: 242px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 26px;
     position: absolute;
-    left: 90px;
-    top: 295px;
+    top: 370px;
+    left: 120px;
   }
 }
 
 .promo__image {
   padding: 0 20px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 
   @media (min-width: $desktop-width) {
     position: relative;

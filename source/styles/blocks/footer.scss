@@ -14,7 +14,8 @@
   padding: 40px 96px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 0 30px;
+    padding: 0;
+    margin-top: 5px;
   }
 }
 
@@ -27,6 +28,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin-left: 39px;
   }
 }
 
@@ -91,6 +93,7 @@
   &::after {
     @include pseudo-element(27px, 34px, $special_dark_grey);
     mask-image: url("../../icons/stack.svg#developer-logo");
+    margin-left: 23px;
   }
 
   &:is(:hover, :focus-visible, :focus)::after {
