@@ -12,10 +12,10 @@
 
 .products__title {
   margin: 0;
+  font-family: $alter-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  letter-spacing: -6%;
   padding: 27px 0 41px;
 
   @media (min-width: $tablet-width) {
@@ -36,6 +36,7 @@
 
 .products__item {
   border-bottom: solid 1px $special_grey_3;
+  box-sizing: border-box;
 
   &:last-child {
     @media (min-width: $tablet-width) {

@@ -1,9 +1,11 @@
 .card {
   display: grid;
+  width: 280px;
+  height: 208px;
   grid-template-columns: 140px 140px;
-  // grid-template-rows: 1fr 40px;
   grid-template-rows: auto 1fr 40px;
   padding: 20px 0 25px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -27,8 +29,6 @@
 
 .card__properties-list {
   grid-column: 2/-1;
-  width: 140px;
-  height: 103px;
   font-size: 12px;
   line-height: 16px;
   color: $special_dark_grey;
@@ -55,10 +55,11 @@
   font-family: $alter-font;
   font-weight: 400;
   font-size: 16px;
-  color: $special_dark-grey-2;
   line-height: 20px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
   width: 76px;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -71,6 +72,7 @@
 
 .card__property-wrapper {
   display: flex;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -91,10 +93,12 @@
 
 .card__image {
   display: block;
-  padding-bottom: 17px;
 }
 
 .card__button {
+  font-size: 16px;
+  line-height: 20px;
+
   @media (min-width: $tablet-width) {
     width: 250px;
   }
