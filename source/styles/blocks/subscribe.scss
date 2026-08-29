@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 77px 0 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .subscribe__form {
@@ -20,6 +24,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 752px;
+    padding-bottom: 104px;
   }
 }
 
@@ -40,6 +45,13 @@
     margin-bottom: 68px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 0 0 76px 70px;
+  }
+
   &::after {
     @include pseudo-element(100%, 2px, $green_primary);
     position: absolute;
@@ -48,6 +60,10 @@
 
     @media (min-width: $tablet-width) {
       left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 22px;
     }
   }
 }
