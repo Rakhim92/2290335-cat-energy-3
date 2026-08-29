@@ -3,7 +3,8 @@
   margin-top: -18px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    margin-top: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,9 +21,10 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     font-size: 32px;
     line-height: 32px;
-    padding-left: 70px;
+    padding: 70px 0 80px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,6 +40,7 @@
 
     @media (min-width: $tablet-width) {
       left: 0;
+      top: 86px;
     }
   }
 }
@@ -56,6 +59,10 @@
 .upsells__content {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -93,7 +100,11 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 38px 28px;
+    height: 139px;
+    padding: 26px 36px 28px 38px;
+    display: grid;
+    grid-template-rows: auto 40px;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,7 +130,8 @@
   padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
+    padding: 0;
+    // display: inline-block;
     font-size: 20px;
     line-height: 20px;
   }
@@ -137,9 +149,11 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
+    justify-content: flex-end;
+    gap: 49px;
     font-size: 16px;
     line-height: 20px;
+    padding: 2px 5px 21px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -164,6 +178,7 @@
   @media (min-width: $tablet-width) {
     width: 632px;
     height: 40px;
+    grid-column: 1/-1;
   }
 
   @media (min-width: $desktop-width) {
@@ -191,7 +206,8 @@
     height: 200px;
     object-fit: cover;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 70px;
     background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("/images/catalog-upsells-tablet@1x.png");
 
     @media (min-resolution: 2dppx) {
@@ -218,6 +234,8 @@
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 82px;
+      margin-bottom: 6px;
+      margin-left: 78px;
     }
 
     @media (min-width: $desktop-width) {
@@ -237,6 +255,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    text-align: left;
+    padding-right: 125px;
   }
 }
 

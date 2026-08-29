@@ -24,6 +24,7 @@
   @media (min-width: $tablet-width) {
     padding: 66px 70px 62px;
     justify-content: space-between;
+    background-color: $basic_grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,6 +73,16 @@
 
 .contacts__text {
   margin: 0;
+
+  & span {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
 }
 
 .contacts__map {
