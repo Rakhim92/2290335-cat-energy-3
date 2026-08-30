@@ -15,23 +15,30 @@
 }
 
 .page-footer__name {
-  padding: 40px 96px 20px;
+  margin: 0 40px;
+  padding: 40px 54px 20px;
+  border-bottom: solid 1px $border_line_2;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     padding: 0;
+    border: none;
     margin-top: 5px;
   }
 }
 
 .social__list {
-  margin: 0;
   list-style-type: none;
   display: flex;
   gap: 24px;
-  padding: 13px 94px;
+  padding: 20px 54px;
+  margin: 0 40px;
+  border-bottom: solid 1px $border_line_2;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     padding: 0;
+    border: none;
     margin-left: 39px;
   }
 }
@@ -75,7 +82,7 @@
 }
 
 .page-footer__copyright {
-  padding: 28px 20px 18px;
+  padding: 20px 20px 40px;
 
   @media (min-width: $tablet-width) {
     padding: 0;

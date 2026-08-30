@@ -95,10 +95,32 @@
   }
 }
 
-.subscribe__control {
+// .subscribe__control {
+//   display: block;
+//   width: 280px;
+//   height: 56px;
+
+//   @media (min-width: $tablet-width) {
+//     width: 376px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     width: 496px;
+//   }
+// }
+
+.subscribe__input {
+  box-sizing: border-box;
   display: block;
   width: 280px;
   height: 56px;
+  padding: 13px;
+  border: solid 1px $supreme_decorative;
+  color: $special_dark_grey;
+  font-family: $primary-font;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: 376px;
@@ -107,12 +129,6 @@
   @media (min-width: $desktop-width) {
     width: 496px;
   }
-}
-
-.subscribe__input {
-  box-sizing: border-box;
-  height: inherit;
-  width: inherit;
 }
 
 .subscribe__button {

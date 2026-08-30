@@ -1,7 +1,9 @@
 .products {
   padding: 0 20px;
+  border-top: solid 1px $border_line_2;
 
   @media (min-width: $tablet-width) {
+    border: none;
     padding: 0 30px;
   }
 
