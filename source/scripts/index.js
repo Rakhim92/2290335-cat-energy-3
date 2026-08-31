@@ -16,5 +16,3 @@ if (slider && range) {
     slider.style.setProperty('--value', `${range.value }%`);
   });
 }
-
-
