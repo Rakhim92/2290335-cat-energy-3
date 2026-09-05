@@ -51,7 +51,7 @@ export function processStyles () {
     .pipe(postcss([
       postUrl([
         {
-          filter: '**/*',
+          filter: '**/images/**/*',
           assetsPath: '../',
         },
         {
